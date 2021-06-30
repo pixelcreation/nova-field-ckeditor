@@ -6,7 +6,7 @@
 <template>
     <panel-item :field="field">
         <template slot="value">
-            <div class="py-6 ckeditor_content">
+            <div class="ck ck-editor_content">
                 <excerpt
                     :content="field.value"
                     :should-show="field.shouldShow"
@@ -17,7 +17,8 @@
     </panel-item>
 </template>
 <style lang="sass">
-    .ckeditor_content
+    .ck-editor_content
+        @import "./../../sass/field.sass"
         @import "./../../sass/figures.sass"
         @import "./../../sass/blocks.sass"
 </style>
